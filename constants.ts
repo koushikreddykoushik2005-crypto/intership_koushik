@@ -1,0 +1,170 @@
+import { Product } from './types';
+
+export const CATEGORIES = [
+  "All",
+  "Fruits & Vegetables",
+  "Dairy & Eggs",
+  "Bakery",
+  "Beverages",
+  "Snacks",
+  "Meat & Seafood"
+];
+
+export const MOCK_PRODUCTS: Product[] = [
+  {
+    id: "1",
+    name: "Organic Bananas",
+    category: "Fruits & Vegetables",
+    price: 1.49,
+    unit: "lb",
+    image: "https://picsum.photos/400/400?random=1",
+    description: "Sweet and creamy organic bananas, perfect for smoothies or baking.",
+    rating: 4.8,
+    reviews: 120,
+    tags: ["organic", "potassium", "fruit"],
+    nutrition: { calories: 89, protein: "1.1g", carbs: "22.8g", fat: "0.3g" }
+  },
+  {
+    id: "2",
+    name: "Fresh Avocados",
+    category: "Fruits & Vegetables",
+    price: 2.99,
+    unit: "pack (2ct)",
+    image: "https://picsum.photos/400/400?random=2",
+    description: "Ripe and ready-to-eat avocados. Great for toast or guacamole.",
+    rating: 4.5,
+    reviews: 85,
+    tags: ["healthy fats", "keto", "fruit"],
+    nutrition: { calories: 160, protein: "2g", carbs: "8.5g", fat: "14.7g" }
+  },
+  {
+    id: "3",
+    name: "Whole Milk",
+    category: "Dairy & Eggs",
+    price: 3.49,
+    unit: "1 gal",
+    image: "https://picsum.photos/400/400?random=3",
+    description: "Farm fresh whole milk, rich in calcium and vitamin D.",
+    rating: 4.7,
+    reviews: 200,
+    tags: ["calcium", "dairy", "fresh"],
+    nutrition: { calories: 150, protein: "8g", carbs: "12g", fat: "8g" }
+  },
+  {
+    id: "4",
+    name: "Sourdough Bread",
+    category: "Bakery",
+    price: 5.99,
+    unit: "loaf",
+    image: "https://picsum.photos/400/400?random=4",
+    description: "Artisanal sourdough bread with a crispy crust and soft interior.",
+    rating: 4.9,
+    reviews: 310,
+    tags: ["bakery", "artisanal", "carb"],
+    nutrition: { calories: 120, protein: "4g", carbs: "24g", fat: "1g" }
+  },
+  {
+    id: "5",
+    name: "Free-Range Eggs",
+    category: "Dairy & Eggs",
+    price: 4.99,
+    unit: "dozen",
+    image: "https://picsum.photos/400/400?random=5",
+    description: "Large brown eggs from free-range chickens.",
+    rating: 4.6,
+    reviews: 150,
+    tags: ["protein", "breakfast", "dairy"],
+    nutrition: { calories: 70, protein: "6g", carbs: "0g", fat: "5g" }
+  },
+  {
+    id: "6",
+    name: "Orange Juice",
+    category: "Beverages",
+    price: 3.99,
+    unit: "52 oz",
+    image: "https://picsum.photos/400/400?random=6",
+    description: "100% pure squeezed orange juice with no added sugar.",
+    rating: 4.4,
+    reviews: 90,
+    tags: ["vitamin c", "juice", "drink"],
+    nutrition: { calories: 110, protein: "2g", carbs: "26g", fat: "0g" }
+  },
+  {
+    id: "7",
+    name: "Spinach",
+    category: "Fruits & Vegetables",
+    price: 2.49,
+    unit: "bag",
+    image: "https://picsum.photos/400/400?random=7",
+    description: "Washed and ready-to-eat baby spinach leaves.",
+    rating: 4.7,
+    reviews: 60,
+    tags: ["iron", "leafy green", "vegetable"],
+    nutrition: { calories: 23, protein: "2.9g", carbs: "3.6g", fat: "0.4g" }
+  },
+  {
+    id: "8",
+    name: "Greek Yogurt",
+    category: "Dairy & Eggs",
+    price: 1.29,
+    unit: "cup",
+    image: "https://picsum.photos/400/400?random=8",
+    description: "Creamy vanilla Greek yogurt with probiotics.",
+    rating: 4.8,
+    reviews: 140,
+    tags: ["probiotic", "protein", "snack"],
+    nutrition: { calories: 120, protein: "12g", carbs: "15g", fat: "0g" }
+  },
+  {
+    id: "9",
+    name: "Almonds",
+    category: "Snacks",
+    price: 8.99,
+    unit: "16 oz",
+    image: "https://picsum.photos/400/400?random=9",
+    description: "Raw unsalted almonds, perfect for snacking or baking.",
+    rating: 4.6,
+    reviews: 75,
+    tags: ["healthy fats", "snack", "protein"],
+    nutrition: { calories: 164, protein: "6g", carbs: "6g", fat: "14g" }
+  },
+  {
+    id: "10",
+    name: "Salmon Fillet",
+    category: "Meat & Seafood",
+    price: 12.99,
+    unit: "lb",
+    image: "https://picsum.photos/400/400?random=10",
+    description: "Fresh Atlantic salmon fillet, rich in Omega-3.",
+    rating: 4.9,
+    reviews: 210,
+    tags: ["omega-3", "fish", "dinner"],
+    nutrition: { calories: 208, protein: "20g", carbs: "0g", fat: "13g" }
+  },
+    {
+    id: "11",
+    name: "Honey Crisp Apples",
+    category: "Fruits & Vegetables",
+    price: 2.49,
+    unit: "lb",
+    image: "https://picsum.photos/400/400?random=11",
+    description: "Crisp, sweet and juicy apples.",
+    rating: 4.7,
+    reviews: 180,
+    tags: ["fruit", "snack", "sweet"],
+    nutrition: { calories: 95, protein: "0.5g", carbs: "25g", fat: "0.3g" }
+  },
+  {
+    id: "12",
+    name: "Rolled Oats",
+    category: "Bakery",
+    price: 3.29,
+    unit: "18 oz",
+    image: "https://picsum.photos/400/400?random=12",
+    description: "Old fashioned rolled oats for a heart-healthy breakfast.",
+    rating: 4.8,
+    reviews: 130,
+    tags: ["fiber", "grain", "breakfast"],
+    nutrition: { calories: 150, protein: "5g", carbs: "27g", fat: "3g" }
+  }
+];
